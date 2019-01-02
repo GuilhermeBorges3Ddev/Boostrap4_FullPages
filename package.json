@@ -1,0 +1,26 @@
+{
+  "name": "bootstrap4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuilhermeBorges3Ddev/Boostrap4_FullPages.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuilhermeBorges3Ddev/Boostrap4_FullPages/issues"
+  },
+  "homepage": "https://github.com/GuilhermeBorges3Ddev/Boostrap4_FullPages#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.6",
+    "ruby": "^0.6.1",
+    "sass": "^1.15.2"
+  }
+}
