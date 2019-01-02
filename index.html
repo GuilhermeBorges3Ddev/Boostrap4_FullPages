@@ -9,16 +9,71 @@
     <!-- Bootstrap CSS redirect with our offline SASS -->
     <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/compiler/bootstrap.css">
 
-    <title>First commit in these repository!</title>
+    <!-- Requiring the file "estilo.scss" -->
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+
   </head>
   <body>
-    <h1>W3LC0M3 FR13N5!</h1>
 
-    <button type="button" class="btn btn-primary">Testting our bottom</button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+        <div class="container">
+
+            <a class="navbar-brand h1 mb-0" href="#">Sua marca</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSite">
+                
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Depoimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contatos</a>
+                    </li>
+
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">
+                            Social
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Facebook</a>
+                            <a class="dropdown-item" href="#">Twitter</a>
+                            <a class="dropdown-item" href="#">Instagram</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <form class="form-inline">
+                    <input class="form-control ml-4 mr-2" type="search" placeholder="Buscar...">
+                    <button class="btn btn-dark" type="Submit">OK</button>
+                </form>
+            </div>
+
+        </div>
+
+    </nav>
+
 
     <!-- jQuery,Popper.js, then Bootstrap JS ... all called from our source/-->
-    <script src="//node_modules/jquery/dist/jquery.js"></script>
-    <script src="//node_modules/popper.js/dist/popper.js"></script>
-    <script src="//node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
   </body>
 </html>
