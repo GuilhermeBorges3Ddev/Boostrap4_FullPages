@@ -208,7 +208,9 @@
                             <li class="list-group-item">Micro Ônibus Chevrolet M-Size</li>
                         </ul>
                         <div class="card-body">     
-                            <a href="#" class="card-link">Ver mais</a>
+                            <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal">
+                                Ver mais
+                            </a>
                             <a href="#" class="card-link">Reservar Lugares</a>             
                         </div>
                         <div class="card-footer text-muted">
@@ -231,7 +233,9 @@
                                 <li class="list-group-item">Van Crysler K22 Puma</li>
                             </ul>
                             <div class="card-body">     
-                                <a href="#" class="card-link">Ver mais</a>
+                                <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal">
+                                    Ver mais
+                                </a>
                                 <a href="#" class="card-link">Reservar lugares</a>             
                             </div>
                             <div class="card-footer text-muted">
@@ -254,7 +258,9 @@
                                 <li class="list-group-item">Táxi Fiat Lux</li>
                             </ul>
                             <div class="card-body">     
-                                <a href="#" class="card-link">Ver mais</a>
+                                <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal">
+                                    Ver mais
+                                </a>
                                 <a href="#" class="card-link">Reservar lugares</a>             
                             </div>
                             <div class="card-footer text-muted">
@@ -267,6 +273,44 @@
 
     </div>
 
+    <!--Modal-->
+    <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
+
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Ver mais</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+
+                
+                <div class="modal-body"> 
+                    <div class="container-fluid">
+                        <div class=row>
+                            <div class="col-6">
+                                <h5>Contrato</h5>
+                                <p>Os transportes são limitados pela localidade, atente-se ao plano assinado!</p>
+                            </div>       
+                            <div class="col-6">
+                                    <h5>Ligue para nós:</h5>
+                                    <p>(35) 99999-0103</p>                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="modal-header">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
 
     <!-- jQuery,Popper.js, then Bootstrap JS ... all called from our source/-->
     <script src="node_modules/jquery/dist/jquery.js"></script>
