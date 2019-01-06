@@ -18,6 +18,7 @@
   "homepage": "https://github.com/GuilhermeBorges3Ddev/Boostrap4_FullPages#readme",
   "dependencies": {
     "bootstrap": "^4.0.0-beta.2",
+    "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.6",
     "ruby": "^0.6.1",

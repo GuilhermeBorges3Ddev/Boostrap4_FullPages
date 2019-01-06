@@ -12,6 +12,10 @@
     <!-- Requiring the file "estilo.scss" -->
     <link rel="stylesheet" href="node_modules/bootstrap/compiler/estilo.css">
 
+    <!-- Requiring the file "font-awesome.css" -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
   </head>
   <body>
 
@@ -125,7 +129,10 @@
         <div class="row">
             <div class="col-12 text-center my-5">
 
-                <h1 class="display-3">Planeje sua viagem conosco</h1>
+                <h1 class="display-3"><i class="fas fa-bus-alt text-primary" aria-hidden="true"></i>
+                    Planeje sua viagem conosco
+                </h1>
+
                 <p>Faça seu roteiro para viajar conosco!!!</p>
             </div>
         </div>
@@ -278,7 +285,10 @@
 
             <div class="row">
                 <div class="col-12 text-center">
-                    <h1 class="display-4">Faça uma prévia da sua viagem!</h1>
+                    <h1 class="display-4"><i class="fa fa-video-camera text-primary" aria-hidden="true"></i>
+                        Faça uma prévia da sua viagem!
+                    </h1>
+
                     <p class="lead">
                         Separamos para você alguns dos melhores momentos 
                         que você pode viver, você já pode sentir o cheiro do 
@@ -291,17 +301,17 @@
             <div class="row">
                 <div class="col-12">
                     <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav" role="tablist">
-                        <li nav-item>
+                        <li class="nav-item">
                             <a class="nav-link active" id="nav-pills-01" data-toggle="pill" href="#nav-item-01">
                                 Região dos Lagos (RJ)
                             </a>
                         </li>
-                        <li nav-item>
+                        <li class="nav-item">
                             <a class="nav-link" id="nav-pills-02" data-toggle="pill" href="#nav-item-02">
                                 Trecho da Estrada Real (MG)
                             </a>
                         </li>
-                        <li nav-item>
+                        <li class="nav-item">
                             <a class="nav-link" id="nav-pills-03" data-toggle="pill" href="#nav-item-03">
                                 Petrópolis (RJ)
                             </a>
@@ -382,6 +392,110 @@
 
     </div>
 
+    <!-- Formulary -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12 text-center my-5">
+                <h1 class="display-4"><i class="fa fa-bus text-primary" aria-hidden="true"></i>
+                    Entre em contato conosco
+                </h1>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mb-5">
+            <div class="col-sm-12 col-md-10 col-lg-8">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label for="inputNome">Seu nome</label>
+                            <input type="text" class="form-control" id="inputNome" placeholder="Digite aqui seu nome">
+                        </div>
+                        <div class="form-group col-sm-6">
+                                <label for="inputSobrenome">Seu sobrenome</label>
+                                <input type="text" class="form-control" id="inputSobrenome" placeholder="Digite aqui sobrenome">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-sm-12">
+                                <label for="inputEnd">Seu endereço</label>
+                                <input type="text" class="form-control" id="inputEnd" placeholder="Digite aqui seu endereço completo">
+    
+                        </div>
+                    </div>    
+
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                                <label for="inputCidade">Sua cidade</label>
+                                <input type="text" class="form-control" id="inputCidade" placeholder="Digite aqui sua cidade">
+                        </div>
+                        <div class="form-group col-sm-4">
+                                <label for="inputEst">Seu estado</label>
+                                <select id="inputEst" class="form-control">
+                                    <option selected>Unidades federativas...</option>
+                                    <option>AC</option>
+                                    <option>AL</option>
+                                    <option>AM</option>
+                                    <option>AP</option>
+                                    <option>BA</option>
+                                    <option>CE</option>
+                                    <option>DF</option>
+                                    <option>ES</option>
+                                    <option>GO</option>
+                                    <option>MA</option>
+                                    <option>MG</option>
+                                    <option>MT</option>
+                                    <option>MS</option>
+                                    <option>PA</option>
+                                    <option>PB</option>
+                                    <option>PE</option>
+                                    <option>PI</option>
+                                    <option>PR</option>
+                                    <option>RJ</option>
+                                    <option>RO</option>
+                                    <option>RN</option>
+                                    <option>RS</option>
+                                    <option>SC</option>
+                                    <option>SE</option>
+                                    <option>SP</option>
+                                    <option>TO</option>
+                                </select>
+                        </div>
+                        <div class="form-group col-sm-2">
+                                <label for="inputCEP">Seu CEP</label>
+                                <input type="text" class="form-control" id="inputCEP" placeholder="XXXXX-XXX">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group col-sm-12">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox">Desejo receber novos roteiros no e-mail
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-sm-12">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <a tabindex="0" class="btn btn-secondary ml-2" role="button" data-toggle="popover" data-placement="right" data-trigger="focus"
+                            title="blablabla" data-content="clapclapclap">Ajuda</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
     <!--Modal-->
     <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
 
@@ -425,5 +539,10 @@
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
   </body>
 </html>
