@@ -1,0 +1,8 @@
+:::: USE THESE TWO COMMANDS ON YOUR TERMINAL OR POWERSHELL:
+_______________________________________________________________________
+
+sass --watch node_modules/bootstrap/scss:node_modules/bootstrap/compiler
+_______________________________________________________________________
+
+sass --watch node_modules/bootstrap/scss:node_modules/font-awesome/css
+_______________________________________________________________________
