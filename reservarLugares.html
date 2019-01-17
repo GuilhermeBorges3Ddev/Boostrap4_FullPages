@@ -16,7 +16,10 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
-  </head>
+    <!-- Requiring the new version 4.2 of Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    
+    </head>
   <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -72,107 +75,55 @@
 
     </nav>
 
+    <!-- Usando os spinners novos: Border Spinner -->
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-6">
+                <h1 class="mb-3">
+                    Border Spinner
+                </h1>
+                <div class="spinner-border" role="status">
+                    <span class="sr-only">Carregando...</span>
+                <div>
+            </div>
+            <div class="mt-2 d-flex bg-secondary justify-content-center align-items-center" style="height: 100px;">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="sr-only">Carregando...</span>
+                    <div>
+                    <div class="spinner-border text-success" role="status">
+                        <span class="sr-only">Carregando...</span>
+                    <div>                
+                    <div class="spinner-border text-danger" role="status">
+                        <span class="sr-only">Carregando...</span>
+                    <div>
+            </div>
+
+
+            <div class="col-6">
+
+
+            </div>
+
+        </div>
+
+    </div>
+
     
 
-    
 
-
-
-    <!-- Footer-->
-    <div class="row">
-        <div class="col-sm-12 mb-3"><hr></div>
-        <div class="col-sm-4">
-            <h3 class="text-center">Idealizadores</h3>
-            <p class="text-center mt-md-5 mt-3">
-                Guilherme S. Borges
-            </p>
-            <p class="text-center">
-                Ricardo V. Sanches
-            </p>
-        </div>
-
-        <div class="col-sm-4">
-                <h3 class="text-center">Menu</h3>
-                <div class="list-group text-center">
-                    <a chref="#" class="list-group-item list-group-item-action list-group-item-primary">
-                        Perfil
-                    </a>
-                    <a chref="#" class="list-group-item list-group-item-action list-group-item-primary">
-                        Serviços
-                    </a>
-                    <a chref="#" class="list-group-item list-group-item-action list-group-item-primary">
-                        Depoimentos
-                    </a>
-                    <a chref="#" class="list-group-item list-group-item-action list-group-item-primary">
-                        Contatos
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-sm-4 mt-md-0 mt-4">
-                    <h3 class="text-center">Social</h3>
-                    <div class="btn-group-vertical btn-block btn-group-lg" role="group">
-                        <a class="btn btn-outline-primary" href="#"><i class="fab fa-facebook"></i> Facebook</a>
-                        <a class="btn btn-outline-info" href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
-                        <a class="btn btn-outline-warning" href="#"><i class="fab fa-instagram"></i> Instagram</a>
-                    </div>            
-            </div>
-
-            
-        </div>
-    </div>
-        <div class="col-12 mt-5 bg-primary pb-2">
-                <hr>
-                <blockquote class="blockquote text-center text-light">
-                    <p class="mb-0"><em>"-Viajar não é algo em que você é bom. É algo que você faz. Como respirar."</p>
-                    <footer class="blockquote-footer text-white">Forman,<cite tittle="titulo">Gayle</cite></footer>
-                </blockquote>
-        </div>
-    </div>
-
-    <!--Modal-->
-    <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
-
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-
-                <div class="modal-header">
-                    <h5 class="modal-title">Ver mais</h5>
-                    <button type="button" class="close" data-dismiss="modal">
-                        <span>&times;</span>
-                    </button>
-                </div>
-
-                
-                <div class="modal-body"> 
-                    <div class="container-fluid">
-                        <div class=row>
-                            <div class="col-6">
-                                <h5>Contrato</h5>
-                                <p>Os transportes são limitados pela localidade, atente-se ao plano assinado!</p>
-                            </div>       
-                            <div class="col-6">
-                                    <h5>Ligue para nós:</h5>
-                                    <p>(35) 99999-0103</p>                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                
-                <div class="modal-header">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
 
     <!-- jQuery,Popper.js, then Bootstrap JS ... all called from our source/-->
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+    <!-- Importing again the same .js files in the newest version-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
     <script>
         $(function () {
             $('[data-toggle="popover"]').popover()
