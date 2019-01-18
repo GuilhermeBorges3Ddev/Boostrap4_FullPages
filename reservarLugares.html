@@ -85,70 +85,79 @@
     <div class="container">
 
         <div class="row mt-5">
-           <div class="col-6">
-                <h1 class="mb-3">
-                    Border Spinner
-                </h1>
-                <div class="spinner-border" role="status">
-                    <span class="sr-only">Carregando...</span>
-                </div>
-                <div class="mt-2 d-flex bg-secondary justify-content-center align-items-center" style="height: 100px !important;">
-                    <div class="spinner-border text-primary" role="status">
-                        <span class="sr-only">Carregando...</span>
+           <div class="col-4">
+                <h1 class="mb-5">
+                    Verificando assentos, por favor aguarde....
+                </h1>              
+                <div class="mt-2 d-flex justify-content-center align-items-center" style="height: 100px !important;">
+                    <div class="row">
+                        <div class="spinner-border mb-4" style="height: 100px; width: 100px;" role="status">
+                            <span class="sr-only">Carregando...</span>
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <div class="spinner-border text-primary" style="height: 100px; width: 100px;" role="status">
+                            <span class="sr-only">Carregando...</span>
+                        </div>
                     </div>
-                    <div class="spinner-border text-success" role="status">
-                        <span class="sr-only">Carregando...</span>
-                    </div>
-                    <div class="spinner-border text-danger" role="status">
-                        <span class="sr-only">Carregando...</span>
-                    </div>
+                    <div class="row">    
+                        <div class="spinner-border mt-4 text-success" style="height: 100px; width: 100px;" role="status">
+                            <span class="sr-only">Carregando...</span>
+                        </div>
+                    </div>        
                 </div>
            </div>
-           <div class="col-6">
-               <h1 class="mb-3">
-                   Growing Spinner
+           <div class="col-4">
+               <h1 class="mb-5 ml-5">
+                   Reservas Disponíveis
                </h1>
-               <div class="spinner-grow" role="status">
-                   <span class="sr-only">Carregando...</span>
-               </div>
-               <div class="d-flex mt-2">
-                    <div class="spinner-grow text-primary spinner-grow-sm" role="status">
-                        <span class="sr-only">Carregando...</span>
+               <div class="d-flex ml-5">
+                    <div class="row">
+                        <div class="spinner-grow" role="status" style="height: 80px; width: 80px;">
+                            <span class="sr-only">Carregando...</span>
+                        </div>
                     </div>
-                    <div class="spinner-grow mx-3 text-success spinner-grow-md" role="status">
-                        <span class="sr-only">Carregando...</span>
-                    </div>
-                    <div class="spinner-grow text-danger spinner-grow-lg" role="status">
-                        <span class="sr-only">Carregando...</span>
+                    <div class="row mt-5">
+                        <div class="spinner-grow text-primary" role="status" style="height: 60px; width: 60px;">
+                            <span class="sr-only">Carregando...</span>
+                        </div>
                     </div>
                </div>
                <!-- Seção de btn's abaixo dos Growing Spinner-->
-               <a href="#" class="btn btn-primary">
+               <a href="#" class="btn btn-primary mt-4 ml-5">
                    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" ></span> Carregando...
                </a>
-               <button class="btn btn-primary" type="button" disabled>
-                   <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true" ></span> Carregando...
-               </button>
            </div>
-        </div><!-- Fim dos Spinners Grow e dos Border Spinner-->
-
-        <!-- Entendendo o componente Toast-->
-        <div class="row mt-5">
-            <div class="col">
-                <h1 class="mb-3">Toast</h1>
-                <input type="button" value="Adicionar" id="add-toast" class="btn btn-primary" />
-            </div>
-        </div>
+           <!-- Applying the new Toast Class-->
+           <div class="col-4">
+                <div class="col">
+                    <h1 class="mb-3">Avise-me de desistências!</h1>
+                    <p>
+                        shuSHUshuHSUhsuHSUHsuhU<br>
+                        SHuhsuHSUhsuHSUHushUSHu<br>
+                        SHuhsuHSUhsuHSUHushUSHu<br>
+                        SHuhsuHSUhsuHSUHushUSHu<br>
+                        SHuhsuHSUhsuHSUHushUSHu<br>
+                        SHuhsuHSUhsuHSUHushUSHu<br>
+                    </p>
+                    <input type="button" value="Receber alerta" id="add-toast" class="btn btn-danger" />
+                </div>
+           </div>
+        </div><!-- End of the Spinners Grow, Border Spinner and Toast-->
 
         <!-- Aplicando margem negativa-->
         <div class="row mt-5">
             <div class="col">
                 <div class="jumbotron mb-n2">
-                    <h1 class="display-3">Negative Margin</h1>
+                    <h1 class="display-3">Assentos Disponíveis</h1>
                 </div>
                 <div class="card mx-5 mt-n5"><!--A notacao é o nX, sendo X de 1 ate o 5-->
                     <div class="card-body">
-                        <h1>Tenho margem negativa</h1>
+                        <h5>
+                            <i class="fa fa-bus"></i> (Micro Ônibus - 21 lugares)
+                            <i class="fa fa-truck"></i> (Van - 2 lugares)
+                            <i class="fa fa-car"></i> (Carro - 4 lugares)
+                        </h5>
                     </div>
                 </div>
             </div>
@@ -184,14 +193,14 @@
                 $('#toast-place').append(`
                     <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="3000">
                         <div class="toast-header">
-                            <strong class="mr-auto">Bootstrap</strong>
-                            <small>Toast</small>
+                            <strong class="mr-auto">ALERTA</strong>
+                            <small>Novo alerta</small>
                             <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Fechar">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="toast-body">
-                            Olá, eu sou um extraterrestre!
+                            Temos <b>2</b> desistentes<br> para viajar à Paraty!
                         </div>
                     </div>
                 `);
